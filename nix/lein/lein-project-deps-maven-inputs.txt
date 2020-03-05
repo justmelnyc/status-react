@@ -1,5 +1,6 @@
 https://repo.clojars.org/binaryage/devtools/0.9.10/devtools-0.9.10
 https://repo.clojars.org/binaryage/env-config/0.2.2/env-config-0.2.2
+https://repo.clojars.org/binaryage/oops/0.7.0/oops-0.7.0
 https://repo.clojars.org/clj-stacktrace/clj-stacktrace/0.2.5/clj-stacktrace-0.2.5
 https://repo.clojars.org/clj-time/clj-time/0.11.0/clj-time-0.11.0
 https://repo.clojars.org/clj-time/clj-time/0.6.0/clj-time-0.6.0
