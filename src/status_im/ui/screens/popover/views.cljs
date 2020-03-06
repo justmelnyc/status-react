@@ -4,6 +4,7 @@
             [reagent.core :as reagent]
             [status-im.ui.components.react :as react]
             [re-frame.core :as re-frame]
+            [status-im.ui.components.button :as button]
             [status-im.ui.screens.wallet.signing-phrase.views :as signing-phrase]
             [status-im.ui.screens.wallet.request.views :as request]
             [status-im.ui.screens.profile.user.views :as profile.user]

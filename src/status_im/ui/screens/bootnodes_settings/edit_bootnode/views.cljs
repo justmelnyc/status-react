@@ -6,7 +6,7 @@
    [status-im.i18n :as i18n]
    [status-im.utils.utils :as utils]
    [status-im.ui.components.styles :as components.styles]
-   [status-im.ui.components.common.common :as components.common]
+   [status-im.ui.components.button :as button]
    [status-im.ui.components.colors :as colors]
    [status-im.ui.components.icons.vector-icons :as vector-icons]
    [status-im.ui.components.toolbar.view :as toolbar]
@@ -75,8 +75,8 @@
             [delete-button id])]]
         [react/view styles/bottom-container
          [react/view components.styles/flex]
-         [components.common/bottom-button
-          {:forward?  true
+         [button/button
+          {:type :next
            :label     (i18n/label :t/save)
            :disabled? (not is-valid?)
            :on-press  #(re-frame/dispatch [:bootnodes.ui/save-pressed])}]]]])))

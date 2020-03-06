@@ -11,7 +11,7 @@
             [status-im.ui.components.contact.contact :refer [toggle-contact-view]]
             [status-im.ui.components.button :as button]
             [status-im.ui.components.list-selection :as list-selection]
-            [status-im.ui.components.common.common :as components.common]
+            [status-im.ui.components.button :as button]
             [status-im.ui.components.react :as react]
             [status-im.ui.components.list.views :as list]
             [status-im.ui.components.toolbar.view :as toolbar]
@@ -115,8 +115,8 @@
   [react/view {:style main-tabs.styles/tabs-container}
    [react/view {:style components.styles/flex}]
    [react/view {:style styles/bottom-container}
-    [components.common/bottom-button
-     {:forward?            true
+    [button/button
+     {:type                :next
       :accessibility-label (or accessibility-label :next-button)
       :label               label
       :disabled?           disabled

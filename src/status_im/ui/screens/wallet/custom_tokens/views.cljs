@@ -5,7 +5,7 @@
             [status-im.ui.components.react :as react]
             [status-im.ui.components.toolbar.view :as toolbar]
             [status-im.ui.components.text-input.view :as text-input]
-            [status-im.ui.components.common.common :as components.common]
+            [status-im.ui.components.button :as button]
             [clojure.string :as string]
             [status-im.i18n :as i18n]
             [status-im.ui.components.list-item.views :as list-item]
@@ -90,8 +90,8 @@
                   :align-items       :center}
 
       [react/view {:style {:flex 1}}]
-      [components.common/bottom-button
-       {:forward?  true
+      [button/button
+       {:type      :next
         :label     (i18n/label :t/add)
         :disabled? (boolean
                     (or in-progress?
